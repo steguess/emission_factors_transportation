@@ -27,3 +27,39 @@ CREATE TABLE flows (
   percentile FLOAT,
   size FLOAT 
 );
+
+DROP TABLE IF EXISTS trading_countries;
+CREATE TABLE trading_countries (
+  country VARCHAR(5),
+  co2emission INT,
+  amount FLOAT,
+  trading_Country VARCHAR(5),
+  in_out VARCHAR(5),
+  flow_type VARCHAR(30)
+);
+
+
+
+DROP TABLE IF EXISTS targets;
+CREATE TABLE targets (
+  source VARCHAR(10),
+  source_type VARCHAR(10),
+  co2emission INT,
+  amount FLOAT,
+  category VARCHAR(30),
+  in_outbound VARCHAR(10),
+  destination VARCHAR(10),
+  dest_type VARCHAR(20)
+);
+DROP TABLE IF EXISTS source;
+CREATE TABLE source (
+  source VARCHAR(10),
+  source_type VARCHAR(10),
+  co2emission INT,
+  amount FLOAT,
+  category VARCHAR(30),
+  tn_outbound VARCHAR(10),
+  destination VARCHAR(10),
+  dest_type VARCHAR(20)
+);
+
