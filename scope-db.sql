@@ -63,3 +63,26 @@ CREATE TABLE source (
   dest_type VARCHAR(20)
 );
 
+
+DROP TABLE IF EXISTS outdegree;
+CREATE TABLE outdegree (
+  id VARCHAR(15),
+  outDegree INT,
+  PRIMARY KEY(id)
+);
+
+
+DROP TABLE IF EXISTS indegree;
+CREATE TABLE indegree (
+  id VARCHAR(15),
+  inDegree INT,
+  PRIMARY KEY(id)
+);
+
+
+DROP TABLE IF EXISTS communities;
+CREATE TABLE communities (
+  id VARCHAR(15),
+  label BIGINT,
+  PRIMARY KEY(id)
+);
