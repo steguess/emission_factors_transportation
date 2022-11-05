@@ -86,3 +86,20 @@ CREATE TABLE communities (
   label BIGINT,
   PRIMARY KEY(id)
 );
+
+DROP TABLE IF EXISTS intercompany;
+CREATE TABLE intercompany (
+  SiteA VARCHAR(20),
+  atype VARCHAR(20),
+  ab_C02Emission INT,
+  ab_Amount INT,
+  ab_Tech VARCHAR(20),
+  ab_in_outbound INT,
+  SiteB VARCHAR(20),
+  btype VARCHAR(20),
+  ba_C02Emission INT,
+  ba_Amount INT,
+  ba_Tech VARCHAR(20),
+  CombinedCO2 INT,
+  CombinedCO2_KG INT
+);
