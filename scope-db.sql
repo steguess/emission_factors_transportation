@@ -103,3 +103,10 @@ CREATE TABLE intercompany (
   CombinedCO2 INT,
   CombinedCO2_KG INT
 );
+
+DROP TABLE IF EXISTS strong_connected;
+CREATE TABLE strong_connected (
+  id VARCHAR(15),
+  strong_connectedID BIGINT,
+  PRIMARY KEY(id)
+);
