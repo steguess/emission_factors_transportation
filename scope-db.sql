@@ -110,3 +110,10 @@ CREATE TABLE strong_connected (
   strong_connectedID BIGINT,
   PRIMARY KEY(id)
 );
+
+DROP TABLE IF EXISTS pagerank;
+CREATE TABLE pagerank (
+  id VARCHAR(15),
+  pagerank BIGINT,
+  PRIMARY KEY(id)
+);
